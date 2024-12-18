@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 상단바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9DB1EE"
+        android:theme="@style/ToolbarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- 메인화면 상단 바 밑 팀 리사이클러뷰 -->
+
+    <!-- 팀 추가 버튼 -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/team_list"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/team_add_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+    <ImageButton
+        android:id="@+id/team_add_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/group_add"
+        app:layout_constraintTop_toTopOf="@+id/team_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/team_list" />
+
+    <!-- 메인화면 게시글 리사이클러뷰 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/post_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="horizontal"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_list" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

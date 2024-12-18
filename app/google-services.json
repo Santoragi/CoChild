@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "427599188024",
+    "project_id": "cochild-e32e2",
+    "storage_bucket": "cochild-e32e2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427599188024:android:b969561466491d2a54d6cd",
+        "android_client_info": {
+          "package_name": "com.example.cochild"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSEdE2SmjjKJONcwMnQEQire97sEyfrNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

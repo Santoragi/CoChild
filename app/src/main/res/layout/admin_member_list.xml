@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="팀원이름"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/member_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/out_button"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#9DB1EE"
+        android:text="탈퇴"
+        android:textSize="10sp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_foreground" />
+
+
+</LinearLayout>
